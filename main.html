@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+    <style>
+        #janela-principal{
+            /* background-color: #cfc; */
+            width: 1350px;
+            height: 965px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #janela-ofuscante{
+            justify-content: space-around;
+            background-color: black;
+            width: 1500;
+            display: flex;
+            height: 975px;
+            align-items: flex-end;
+            margin-top: 0px;
+        }
+
+        #informacoes-sobre-conteudo{
+            height: 270px;
+            background-color: rgb(29, 29, 29);
+            flex-direction: row;
+            display: flex;
+        }
+
+        #interagíveis-sobre-conteudo{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-image: url("data/FluxoEMPI.jpg");
+            background-repeat: no-repeat;
+            background-position: 100% 12%;
+            background-size: cover;
+            height: 695px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        #interagiveis-left{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            display: flex;
+            width: 400px;
+            /* background-color: cornsilk; */
+            padding-bottom: 5%;
+        }
+        #interagiveis-right{
+            /* background-color: bisque; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 5%;
+            padding-top: 2%;
+            padding-right: 2%;
+            width: 50px;
+        }
+
+
+        #informacoes-left{
+            /* background-color: cornflowerblue; */
+            width: 880px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #informacoes-right{
+            /* background-color: chocolate; */
+            width: 620px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #resumo-tecnico{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left: 1%;
+            margin-right: 50%;
+            align-items: baseline;
+            /* background-color: cyan; */
+        }
+        .top-x{
+            padding-right: 55%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: darkgreen; */
+            padding-left: 5%;
+        }
+        #sinopse{
+            /* background-color: darkorange; */
+            padding-left: 5%;
+        }
+        #elenco{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 15%;
+        }
+        #generos{
+            display: flex;
+            padding-right: 5%;
+        }
+        #relevancia{
+            color: greenyellow;
+        }
+        .media{
+            color: white;
+            font-family: Arial;
+            font-weight: 700;
+        }
+        .relevancia{
+            color: greenyellow;
+            font-family: Arial;
+            font-weight: 700;
+        }
+        .elenco-generos{
+            color: rgb(90, 85, 85);
+            font-family: Arial;
+            font-weight: 700;
+        }
+        .textos{
+            color: white;
+            font-family: Arial;
+            font-weight: 530;
+        }
+    </style>
+
+    <body>
+        <div id="janela-ofuscante">
+            <div id="janela-principal">
+                <div id = "interagíveis-sobre-conteudo">
+                    <div id="interagiveis-left">
+                        <button class = "entrar">
+                            <img src="./data/play.svg"/>
+                        </button>
+                        <button class = "adicionar">
+                            <img src="./data/plus.svg"/>
+                        </button>
+                        <button class = "gostar">
+                            <img src="./data/like.svg"/>
+                        </button>
+                    </div>
+                    <div id="interagiveis-right">
+                        <button class = "fechar">
+                            <img src="./data/x.svg"/>
+                        </button>
+                        <button class = "mutar">
+                            <img src="./data/mute.svg"/>
+                        </button>
+                    </div>
+                </div>
+                <div id = "informacoes-sobre-conteudo">
+                    <div id = "informacoes-left">
+                        <div id = "resumo-tecnico">
+                            <h4 class="relevancia">
+                                100% relevante
+                            </h4>
+                            <label class="importancia media">
+                                1993
+                            </label>
+                            <label class="importancia media">
+                                29 anos
+                            </label>
+                        </div>
+                        <div class = "top-x">
+                            <img src="./data/livre.png"/ width="25" height="25">
+                            <h3 class="importancia media">
+                                Top 1 empresas júnior do Brasil
+                            </h3>
+                        </div>
+                        <div id="sinopse">
+                            <label class="textos">
+                                Review do ps
+                            </label>
+                        </div>
+                    </div>
+                    <div id = "informacoes-right">
+                        <div id = "elenco">
+                            <label class="elenco-generos">
+                                Elenco:
+                                <label class="textos">
+                                    Antônio Falcão, Victor Diniz, Karolinne Oliveira,
+                                </label>
+                                <a
+                                    href="https://fluxoconsultoria.poli.ufrj.br/quem-somos/">e mais
+                                </a>
+                            </label>
+                        </div>
+                        <div id = "generos">
+                            <label class="elenco-generos">
+                                Gêneros:
+                                <label class="textos">
+                                    Engenharias, Química Industrial, Arquitetura e Urbanismo, e Comunicação Visual
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
