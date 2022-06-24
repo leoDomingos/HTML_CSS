@@ -41,8 +41,17 @@
             border-radius: 10px 10px 0px 0px;
         }
         #interagiveis-left{
+            display: flex;
+
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 400px;
+            /* background-color: cornsilk; */
+            padding-bottom: 3.5%;
+        }
+        #interagiveis-left-bot{
             flex-direction: row;
-            align-items: flex-end;
+            align-items: center;
             justify-content: space-around;
             display: flex;
             width: 400px;
@@ -74,18 +83,19 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            padding-left: 20%;
         }
         #resumo-tecnico{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            padding-left: 1%;
-            margin-right: 50%;
+            padding-left: 5%;
+            margin-right: 45%;
             align-items: baseline;
             /* background-color: cyan; */
         }
         .top-x{
-            padding-right: 55%;
+            padding-right: 45%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -121,11 +131,13 @@
         .elenco-generos{
             color: rgb(90, 85, 85);
             font-family: Arial;
+            font-size: 20px;
             font-weight: 700;
         }
         .textos{
             color: white;
             font-family: Arial;
+            font-size: 20px;
             font-weight: 530;
         }
         .botao-redondo{
@@ -152,7 +164,7 @@
         }
         .botao-play{
             border-radius: 7%;
-            width: 100px;
+            width: 130px;
             height: 40px;
             line-height: 50px;
             background: rgba(255, 255, 255, 1);
@@ -169,7 +181,7 @@
             border-radius: 7%;
             width: 30px;
             height: 20px;
-            line-height: 0px;
+            line-height: 20px;
             background: rgba(255, 255, 255, 0.5);
             background-repeat: no-repeat;
             border-style: solid;
@@ -182,7 +194,15 @@
             font-size: large;
             display: flex;
             align-items: flex-start;
-            line-height: 50px;
+            line-height: 47px;
+        }
+        #logo-fluxo{
+            width: 300px;
+            height: 300px;
+        }
+        .imagem-livre{
+            position: relative;
+            top: 8px
         }
     </style>
 
@@ -191,19 +211,23 @@
             <div id="janela-principal">
                 <div id = "interagíveis-sobre-conteudo">
                     <div id="interagiveis-left">
-                        
-                        <button class = "botao-play">
-                            <img src="./data/play.svg"/>
-                            <label class="texto-entrar">
-                                Entrar
-                            </label>
-                        </button>
-                        <button class = "botao-redondo">
-                            <img src="./data/plus.svg"/>
-                        </button>
-                        <button class = "botao-redondo">
-                            <img src="./data/like.svg"/>
-                        </button>
+                        <div id="interagiveis-left-up">
+                            <img src="./data/LogoFluxo.png" id="logo-fluxo"/>
+                        </div>
+                        <div id="interagiveis-left-bot">
+                            <button class = "botao-play">
+                                <img src="./data/play.svg"/>
+                                <label class="texto-entrar">
+                                    Entrar
+                                </label>
+                            </button>
+                            <button class = "botao-redondo">
+                                <img src="./data/plus.svg"/>
+                            </button>
+                            <button class = "botao-redondo">
+                                <img src="./data/like.svg"/>
+                            </button>
+                        </div>
                     </div>
                     <div id="interagiveis-right">
                         <button class = "botao-close">
@@ -223,12 +247,14 @@
                             <label class="importancia media">
                                 1993
                             </label>
-                            <img src="./data/livre.png" width="28" height="28"/>
+                            <img src="./data/livre.png" width="28" height="28" class="imagem-livre"/>
                             <label class="importancia media">
                                 29 anos
                             </label>
                             <button class = "botao-hd">
-                                HD
+                                <label class="importancia media">
+                                    HD
+                                </label>
                             </button>
                         </div>
                         <div class = "top-x">
@@ -239,7 +265,11 @@
                         </div>
                         <div id="sinopse">
                             <label class="textos">
-                                Review do ps
+                                O PS até está sendo bem legal. Gostei também quem
+                                criaram um grupo de carona para ajudar na hora de
+                                voltar para casa. Gostaria de um pouco mais de tempo
+                                para o envio "temporário", que agora é até as 16h,
+                                mas não sei o quão viável seria para os mentores.
                             </label>
                         </div>
                     </div>
