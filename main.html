@@ -14,7 +14,7 @@
 
         #janela-ofuscante{
             justify-content: space-around;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             width: 1500;
             display: flex;
             height: 975px;
@@ -24,7 +24,7 @@
 
         #informacoes-sobre-conteudo{
             height: 270px;
-            background-color: rgb(29, 29, 29);
+            background-color: rgb(17, 17, 17);
             flex-direction: row;
             display: flex;
         }
@@ -33,12 +33,12 @@
             display: flex;
             justify-content: space-between;
             flex-direction: row;
-            background-image: url("data/FluxoEMPI.jpg");
+            background:linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url("data/FluxoEMPI.jpg");
             background-repeat: no-repeat;
             background-position: 100% 12%;
             background-size: cover;
             height: 695px;
-            border-radius: 20px 20px 0px 0px;
+            border-radius: 10px 10px 0px 0px;
         }
         #interagiveis-left{
             flex-direction: row;
@@ -128,6 +128,62 @@
             font-family: Arial;
             font-weight: 530;
         }
+        .botao-redondo{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 0px;
+            background: rgba(161, 161, 161, 0.5);
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-color:rgb(148, 148, 148);
+            outline: none;
+        }
+        .botao-close{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 0px;
+            background: rgba(43, 42, 42, 0.5);
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-color:rgb(95, 95, 95);
+            outline: none;
+        }
+        .botao-play{
+            border-radius: 7%;
+            width: 100px;
+            height: 40px;
+            line-height: 50px;
+            background: rgba(255, 255, 255, 1);
+            background-repeat: no-repeat;
+            border-style: none;
+            border-color:rgb(148, 148, 148);
+            outline: none;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+        .botao-hd{
+            border-radius: 7%;
+            width: 30px;
+            height: 20px;
+            line-height: 0px;
+            background: rgba(255, 255, 255, 0.5);
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-color:rgb(199, 199, 199);
+        }
+        .texto-entrar{
+            color: rgb(0, 0, 0);
+            font-family: Arial;
+            font-weight: 700;
+            font-size: large;
+            display: flex;
+            align-items: flex-start;
+            line-height: 50px;
+        }
     </style>
 
     <body>
@@ -135,21 +191,25 @@
             <div id="janela-principal">
                 <div id = "interagíveis-sobre-conteudo">
                     <div id="interagiveis-left">
-                        <button class = "entrar">
+                        
+                        <button class = "botao-play">
                             <img src="./data/play.svg"/>
+                            <label class="texto-entrar">
+                                Entrar
+                            </label>
                         </button>
-                        <button class = "adicionar">
+                        <button class = "botao-redondo">
                             <img src="./data/plus.svg"/>
                         </button>
-                        <button class = "gostar">
+                        <button class = "botao-redondo">
                             <img src="./data/like.svg"/>
                         </button>
                     </div>
                     <div id="interagiveis-right">
-                        <button class = "fechar">
+                        <button class = "botao-close">
                             <img src="./data/x.svg"/>
                         </button>
-                        <button class = "mutar">
+                        <button class = "botao-redondo">
                             <img src="./data/mute.svg"/>
                         </button>
                     </div>
@@ -163,12 +223,16 @@
                             <label class="importancia media">
                                 1993
                             </label>
+                            <img src="./data/livre.png" width="28" height="28"/>
                             <label class="importancia media">
                                 29 anos
                             </label>
+                            <button class = "botao-hd">
+                                HD
+                            </button>
                         </div>
                         <div class = "top-x">
-                            <img src="./data/livre.png"/ width="25" height="25">
+                            <img src="./data/top1.png"/ width="25" height="25"/>
                             <h3 class="importancia media">
                                 Top 1 empresas júnior do Brasil
                             </h3>
